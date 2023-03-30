@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/style_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/starry_sky_"
+        style="@style/style_main"
+        android:layout_width="750dp"
+        android:layout_height="850dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/backround"
+        android:translationX="-200dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-9dp"
+        tools:layout_editor_absoluteY="-60dp" />
+
+    <ImageView
+        android:id="@+id/rectangle_4"
+        android:layout_width="200dp"
+        android:layout_height="27dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:scaleType="fitXY"
+        android:scaleX="3"
+        android:scaleY="0.75"
+        app:layout_constraintEnd_toStartOf="@+id/planet"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rect1" />
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-88dp"
+        android:layout_marginBottom="-260dp"
+        android:background="@drawable/rectangle2"
+        app:layout_constraintBottom_toBottomOf="@+id/planet"
+        app:layout_constraintStart_toStartOf="@+id/planet" />
+
+    <View
+        android:id="@+id/rectangle"
+        android:layout_width="427dp"
+        android:layout_height="170dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rect"
+        android:rotation="-180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/planet"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginBottom="310dp"
+        android:background="@drawable/planet"
+        app:layout_constraintBottom_toTopOf="@+id/Title"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/time"
+        android:layout_width="250dp"
+        android:layout_height="88dp"
+        android:background="@drawable/time"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88" />
+
+    <View
+        android:id="@+id/wtsp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/watsapp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_4"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_4"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_4" />
+
+    <View
+        android:id="@+id/fb"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/fb"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_4"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_4"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toEndOf="@+id/wtsp"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_4" />
+
+    <View
+        android:id="@+id/inst"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/inst"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_4"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_4"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/fb"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_4" />
+
+    <View
+        android:id="@+id/ytb"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ytb"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_4"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_4"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@+id/inst"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_4" />
+
+    <View
+        android:id="@+id/robot"
+        android:layout_width="450dp"
+        android:layout_height="250dp"
+        android:background="@drawable/robot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Title"
+        style="@style/style_main"
+        android:layout_width="394dp"
+        android:layout_height="118dp"
+        android:fontFamily="@font/terminator"
+        android:gravity="center"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/style_main"
+        android:layout_width="156dp"
+        android:layout_height="36dp"
+        android:background="@color/transparent"
+        android:fontFamily="@font/terminator"
+        android:onClick="goToProgram"
+        android:text="Программа"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.928" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/style_main"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:background="@color/transparent"
+        android:fontFamily="@font/terminator"
+        android:onClick="goToInformation"
+        android:text="Информация"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/style_main"
+        android:layout_width="245dp"
+        android:layout_height="68dp"
+        android:background="@color/transparent"
+        android:fontFamily="@font/terminator"
+        android:onClick="goToTickets"
+        android:shadowColor="#FF00C7"
+        android:shadowDx="-5"
+        android:shadowDy="-10"
+        android:shadowRadius="1"
+        android:text="билеты"
+        android:textColor="#FFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
